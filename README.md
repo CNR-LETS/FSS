@@ -1,22 +1,19 @@
 # FSS plugin for Brainstorm
 
-This process uses the [Simulated Annealing Algorithm](https://it.mathworks.com/help/gads/what-is-simulated-annealing.html) to apply the Functional Source Separation
-to a dataset, extracting the functional source S1 or M1 (one at a time).
+This process uses the [Simulated Annealing Algorithm](https://it.mathworks.com/help/gads/what-is-simulated-annealing.html) to apply the Functional Source Separation (FSS)
+to a sample dataset, extracting the functional source S1 or M1 (one at a time).
 
 ## Dataset description
 
-The dataset consists of:
-- one subject, two acquisition runs (left and right stimulation) of about 4 minutes each;
-- sampling frequency: 5000 Hz;
-- subject stimulated by galvanic median nerve stimulation;
-- 63 acquisition channels;
+The dataset consists of one subject, two acquisition runs (left and right stimulation) of about 4 minutes each. 
+The subject was stimulated by galvanic median nerve stimulation. Data were recorded by an EEG device with 63 channels with sampling frequency of 5000 Hz.
 
-## Process GUI screenshot
+## GUI of FSS process
 
 ![The process GUI in the pipeline editor](/Images/020_processGUI.png)
 
 ## Options description
-### Dataset dependant options:
+### Dataset options:
 - Sensor types or names (empty=all): indicates which sensors are to be considered for elaboration.
 - Area: the brain area to be investigated.
 - Trial Duration : the length of a single trial, including the pretrigger.
